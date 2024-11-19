@@ -358,7 +358,110 @@ Detection: AWS Config
 Detection: AWS Security Hub
 Incident Response: Amazon Detective
 Compliance: AWS Artifact
+https://aws.amazon.com/products/security/
+for full list
+"""
+
+"""Distributed Denial of Service (DDoS)
+
+Hacker -> mutiple infected computers known as bots -> Floods the server with requests
+
+this will take a server or site down by over flowing it with requests
+
+Which means that a legitimate user will not be able to access the site
+thats where the name comes from Denial of Service
+
+the service that helps prevent this is AWS Shield
+
+Standard
+- Automatically protects all AWS customers
+- Free
+_ Protects from most common DDoS attacks
+
+Advanced
+- A paid service that protects against more sophisticated attacks
+- Intergrates with other services like CloudFront, Route 53 and Elastic Load balancing
+- AWS Web Application Firewall (WAF) included at no extra cost 
+"""
 
 
+"""AWS Web Application Firewall (WAF)
 
+Configure rules
+-Allow, block, monitor/count
+-IP addresses, country of origin, presence of a script, URL strings, etc.
+-Example:
+    -Block IP addresses and values in the request that are used by  known attackers
+    -A specific IP address can only send 100 requests to your app in 5 minutes
+    -
+
+"""
+"""AWS Key Management System (KMS)
+
+Two types of Encryption
+
+AT REST 
+Data that's stord or archived on a device
+Examples:
+- S3 bucket 
+- Hard disk
+- Database
+
+IN TRANSIT
+Data being transferred from one location to another
+Examples:
+- Moving data from an EC2 instance to an S3 bucket
+- Moving from an on-premises data center to AWS
+
+we use Encryption keys to do this
+
+Examples:
+this is a secret! -> encrypt it by adding 1 to the letters 
+-> uijt jt b tfdsfu@
+
+AWS Encryption works kinda like this but better
+
+AWS Key Management System (KMS)  
+
+- Primary service for encryption in AWS
+- AWS manages the encryption hardware, software and keys for you
+- Integrated with many AWS services incuding EBS< S3, Redshift and CloudTrail
+        - Example: I want to encrypt a doc stored in an S3 bucket you can use KMS
+- FIPS 140-2 Compliance: Level 2 overall (3 in some areas)
+
+the second service that is used is AWS CloudHSM
+
+HSM - Hardware Security Module
+AWS provisions the hardware and you do everything else
+- AWS cannot acces your keys
+- AWS cannot recover your keys
+
+Integrated with a limited number of other AWS services
+FIPS 140-2 Compliance: Level 3 (considered more secure)
+
+Types of keys
+
+AWS managed 
+
+AWS created and manages
+
+Used by AWS services
+- lambda
+- S3
+- Cloud9
+________________________
+Customer managed 
+You (customer) create and manage
+
+can create policies to rotate keys
+
+Specify who can use and manage the keys
+
+Supports "bring your own key" (BYOK) option
+________________________________________________
+Custom key stores
+
+Created with CloudHSM
+
+You own and manage 
 """
