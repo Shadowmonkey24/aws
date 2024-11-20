@@ -465,3 +465,69 @@ Created with CloudHSM
 
 You own and manage 
 """
+
+"""Understanding Certificates
+
+secret request -> SSL/TLS 1) Identifies the server as reputable 2) Ensures
+communication between us is encrypted -> secret responce
+
+TSL replaced SSL but SSL is still used on older systems
+
+AWS Certificate Manager (ACM)
+Provides, manage, and deploy public and private SSL/TLS certificates
+- Public = for resources on the public internet (these certs are free)
+- Private = for resources on the private networks
+Loads certs on:
+- API Gateway
+- CloudFront distributions
+- Elastic Load Balancing
+these handle traffic to your site
+"""
+
+"""AWS Secrets Manager
+The recommended way to protect secrets (e.g., user names and passwords) needed
+by your application and services
+
+"""
+"""Personally Identifiable Information (PII)
+
+Amazon Macie
+
+automatically inventories S3 buckets -> Identifies and analyzes PII data using machine
+learning and pattern matching -> Uses findings to automate workflows and remediation
+(sends data to CloudWatch and EventBridge)
+
+"""
+
+"""Amazon Inspector
+Automatically detects and scans for software vunerabilitues and network exposuere
+-> Makes sense of the findings and assings a risk score -> Uses findings to automate
+workflows and ticketing (you can intergrate with security Hub and  EventBridge)
+
+"""
+
+"""Amazon GuardDuty
+
+Continuously analyzes network, account and data access (in cloudTrail Mgmt and S3 Events
+also VPC Flow and DNS Logs) -> Using machine learning, identifies and prioritizes 
+potential threats -> using CloudWatch and Lamdba automate workflows and remediation
+
+unlike Inspector this will analyze the entire AWS account where Inspector in limited
+to only your applications
+"""
+
+
+"""AWS Configuration
+
+Inventory, record and audit the configuration of your AWS resources
+Example use cases:
+- Inventory all your S3 buckets, and when one of them becomes publicly accessible,
+receive an alert
+- Recive an alert when an unautorized port opens on a security group
+-During a compliance audit,show when configurations change
+
+"""
+
+"""
+
+"""
