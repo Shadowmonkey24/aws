@@ -528,6 +528,23 @@ receive an alert
 
 """
 
+"""AWS Security Hub
+
+Pulls everything together into a consolidated place where you can view and take actions on security issues
+
+- Requires AWS config
+- Cross-accounts
+-  Aggergates data from GuardDuty, Inspector, macie, IAM Access Analyzer, Systems Manager and 
+Firewall Manager
+
 """
 
+"""Amazon Detective
+
+cloudTrailLogs  VPC Flow Logs GuardDuty Findings
+
+Automatically distills and organizes data into a graph model
+
+
+Detective is used to fined the root cause quickly because seven
 """
