@@ -124,3 +124,31 @@ content closer to your customers for faster delivery.
 - withstand environmental desaster = deploy to 2 or more regions
 
 """
+
+
+"""ASG (Auto Scaling Groups)
+Automatically scale out/in instances based on the load
+- Specify instance numbers: desired capacity, minimum and max
+- Registers new instances with load balancer
+
+Replace unheathy instances automatically
+
+Run at optimal capacity, meaning cost savings
+
+"""
+
+"""AWS Elastic Beanstal
+Platform as a service (PaaS)
+- Infrastructure is handled for you
+    -EC2 instances, load balancers, auto-scaling groups, database, etc.
+- Uses CloudFormation templets to deploy the infrastucture
+
+Health monitoring available in the Console
+
+Support for many platforms
+- Node, PHP, Java, Python, Go, .NET, Ruby, Docker, etc.
+"""
+
+"""
+
+"""
