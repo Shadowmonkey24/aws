@@ -149,6 +149,24 @@ Support for many platforms
 - Node, PHP, Java, Python, Go, .NET, Ruby, Docker, etc.
 """
 
-"""
+"""Creating an Elastic Beanstalk Application
+Application
 
+Application are like folders for your code
+
+[Environment
+- Infastucture (EC2 instances, load balancers, auto-scaling groups, etc.)
+- Runs a single application version at a time
+- An application can have many environments ( like dev and test)
+]
+[Application versions
+- Application code
+- Stored in S3 
+- An application can have many application versions (supporting rollback, exc.)
+]
+[Saved configurations
+- Defines how an environment and its resources behave
+- Can be used to launch new environments
+- An application can have many saved configurations
+]
 """
